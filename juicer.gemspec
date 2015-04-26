@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{juicer}
-  s.version = "1.2.0"
+  s.name = %q{coderative-juicer}
+  s.version = "1.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christian Johansen"]
@@ -74,58 +74,35 @@ Happy juicing!
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_development_dependency(%q<fakefs>, [">= 0.2.1"])
-      s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_development_dependency(%q<fakefs>, [">= 0.2.1"])
+      s.add_development_dependency(%q<shoulda>, [">= 3.5.0"])
+      s.add_development_dependency(%q<mocha>, [">= 1.1.0"])
+      s.add_development_dependency(%q<fakefs>, [">= 0.6.7"])
       s.add_development_dependency(%q<jeweler>, [">= 0.2.1"])
       s.add_development_dependency(%q<redgreen>, [">= 1.2.2"])
-      s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_development_dependency(%q<fakefs>, [">= 0.2.1"])
-      s.add_development_dependency(%q<jeweler>, [">= 0.2.1"])
-      s.add_development_dependency(%q<redgreen>, [">= 1.2.2"])
-      s.add_runtime_dependency(%q<cmdparse>, [">= 0"])
+      s.add_runtime_dependency(%q<cmdparse>, ["~> 2.0.6"])
       s.add_runtime_dependency(%q<nokogiri>, [">= 1.5.0"])
-      s.add_runtime_dependency(%q<rubyzip>, ["= 0.9.9"])
+      s.add_runtime_dependency(%q<rubyzip>, ["~> 1.0"])
+      s.add_runtime_dependency(%q<zip-zip>, ["~> 0.3"])
     else
-      s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_dependency(%q<fakefs>, [">= 0.2.1"])
-      s.add_dependency(%q<jeweler>, [">= 0.2.1"])
-      s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_dependency(%q<fakefs>, [">= 0.2.1"])
+      s.add_dependency(%q<shoulda>, [">= 3.5.0"])
+      s.add_dependency(%q<mocha>, [">= 1.1.0"])
+      s.add_dependency(%q<fakefs>, [">= 0.6.7"])
       s.add_dependency(%q<jeweler>, [">= 0.2.1"])
       s.add_dependency(%q<redgreen>, [">= 1.2.2"])
-      s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-      s.add_dependency(%q<mocha>, [">= 0.9.8"])
-      s.add_dependency(%q<fakefs>, [">= 0.2.1"])
-      s.add_dependency(%q<jeweler>, [">= 0.2.1"])
-      s.add_dependency(%q<redgreen>, [">= 1.2.2"])
-      s.add_dependency(%q<cmdparse>, [">= 0"])
+      s.add_dependency(%q<cmdparse>, ["~> 2.0.6"])
       s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
-      s.add_dependency(%q<rubyzip>, ["= 0.9.9"])
+      s.add_dependency(%q<rubyzip>, ["~> 1.0"])
+      s.add_dependency(%q<zip-zip>, ["~> 0.3"])
     end
   else
-    s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-    s.add_dependency(%q<mocha>, [">= 0.9.8"])
-    s.add_dependency(%q<fakefs>, [">= 0.2.1"])
-    s.add_dependency(%q<jeweler>, [">= 0.2.1"])
-    s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-    s.add_dependency(%q<mocha>, [">= 0.9.8"])
-    s.add_dependency(%q<fakefs>, [">= 0.2.1"])
+    s.add_dependency(%q<shoulda>, [">= 3.5.0"])
+    s.add_dependency(%q<mocha>, [">= 1.1.0"])
+    s.add_dependency(%q<fakefs>, [">= 0.6.7"])
     s.add_dependency(%q<jeweler>, [">= 0.2.1"])
     s.add_dependency(%q<redgreen>, [">= 1.2.2"])
-    s.add_dependency(%q<shoulda>, [">= 2.10.2"])
-    s.add_dependency(%q<mocha>, [">= 0.9.8"])
-    s.add_dependency(%q<fakefs>, [">= 0.2.1"])
-    s.add_dependency(%q<jeweler>, [">= 0.2.1"])
-    s.add_dependency(%q<redgreen>, [">= 1.2.2"])
-    s.add_dependency(%q<cmdparse>, [">= 0"])
+    s.add_dependency(%q<cmdparse>, ["~> 2.0.6"])
     s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
-    s.add_dependency(%q<rubyzip>, ["= 0.9.9"])
+    s.add_dependency(%q<rubyzip>, ["~> 1.0"])
+    s.add_dependency(%q<zip-zip>, ["~> 0.3"])
   end
 end
